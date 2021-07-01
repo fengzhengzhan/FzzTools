@@ -20,6 +20,7 @@ FzMarkpdf.exe -n "MVP Detecting Vulnerabilities using Patch-Enhanced Vulnerabili
 
 然后将产生一个名为 "Mark_MVP 使用补丁增强型漏洞签名检测漏洞.pdf "的文件。
 
+```
 optional arguments:
   -h, --help            show this help message and exit
   --pdfname PDFNAME, -n PDFNAME
@@ -34,3 +35,5 @@ optional arguments:
                         页面缩放偏移修正([scale_x,y,offset_x,y]) || Page zoom offset corrected([scale_x,y,offset_x,y]).
   --minbox MINBOX, -m MINBOX
                         将小于此数值的点视为噪点 || Consider points smaller than this value as noise.
+```
+
