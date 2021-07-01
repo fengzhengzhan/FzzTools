@@ -1,14 +1,16 @@
 # FzTools
 
-An open sources tool, it can achieve many useful or strange ideas and functions platform.
+An open source tool, it is a platform where many useful or strange ideas and features can be implemented.
 
 ## 01 FzMarkpdf
 
 Some people like to read their papers on A4 paper. It's a very comfortable way to do it. But this can lead to a problem. If A4 paper is lost, everything will be lost. FzMarkpdf can help you convert red handwriting to PDF format path. You can save it on your computer and find it easily.
 
-**(^_^)#**
+ 
 
-一个开源的工具，它可以实现许多有用或奇怪的想法和功能的平台。
+**简体中文 (^_^)#**
+
+一个开源的工具，它是一个可以实现许多有用或奇怪的想法和功能的平台。
 
 ## 01 FzMarkpdf
 
