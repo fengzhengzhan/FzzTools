@@ -19,14 +19,14 @@ pip install pdfplumber
 可参照examples文件中的例子
 '''
 
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 parser = argparse.ArgumentParser(description="FzMarkpdf")
 parser.add_argument('--pdfname', '-n', help='pdf文件名称 || The name of pdf.', type=str, required=True)
 parser.add_argument('--pdfpath', '-pp', help='pdf文件路径 || The path of pdf.', type=str, default="./")
 parser.add_argument('--imagespath', '-p', help='笔迹拍摄图片路径 || The path of images that are marked.', type=str, default="./images/")
 parser.add_argument('--scale', '-s', help='打印页面的缩放比例(100缩放 等于 1.0) || The scale of the printed page(100zoom equals 1.0).', type=float, default=1.0)
-parser.add_argument('--correction', '-c', help='页面缩放偏移修正([scale_x,y,offset_x,y]) || Page zoom offset corrected([scale_x,y,offset_x,y]).', type=list, default=[1.0, 1.0, 0.0, 0.0])
+parser.add_argument('--correction', '-c', help='页面缩放偏移修正，传入四个值逗号分开(scale_x,y,offset_x,y) || Page zoom offset corrected([scale_x,y,offset_x,y]).', type=list, default="1.0,1.0,0.0,0.0")
 parser.add_argument('--minbox', '-m', help='将小于此数值的点视为噪点 || Consider points smaller than this value as noise.', type=int, default=600)
 args = parser.parse_args()
 
@@ -72,10 +72,11 @@ ERROR_OFFSET_X = -24.0
 ERROR_OFFSET_Y = -6.0
 
 # 人工修正 缩放 偏移 1.0 1.0 0.0 0.0
-SELF_CORRECTION_X = args.correction[0]
-SELF_CORRECTION_Y = args.correction[1]
-SELF_OFFSET_X = args.correction[2]
-SELF_OFFSET_Y = args.correction[3]
+correction_list = args.correction.split(',')
+SELF_CORRECTION_X = float(correction_list[0])
+SELF_CORRECTION_Y = float(correction_list[1])
+SELF_OFFSET_X = float(correction_list[2])
+SELF_OFFSET_Y = float(correction_list[3])
 
 if DEBUG_MODE:
     print("PDF_WIDTH", PDF_WIDTH)
