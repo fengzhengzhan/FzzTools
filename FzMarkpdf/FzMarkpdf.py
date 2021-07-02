@@ -26,7 +26,7 @@ parser.add_argument('--pdfname', '-n', help='pdf文件名称 || The name of pdf.
 parser.add_argument('--pdfpath', '-pp', help='pdf文件路径 || The path of pdf.', type=str, default="./")
 parser.add_argument('--imagespath', '-p', help='笔迹拍摄图片路径 || The path of images that are marked.', type=str, default="./images/")
 parser.add_argument('--scale', '-s', help='打印页面的缩放比例(100缩放 等于 1.0) || The scale of the printed page(100zoom equals 1.0).', type=float, default=1.0)
-parser.add_argument('--correction', '-c', help='页面缩放偏移修正，传入四个值逗号分开(scale_x,y,offset_x,y) || Page zoom offset corrected([scale_x,y,offset_x,y]).', type=list, default="1.0,1.0,0.0,0.0")
+parser.add_argument('--correction', '-c', help='页面缩放偏移修正，传入四个值逗号分开(scale_x,y,offset_x,y) || Page zoom offset corrected([scale_x,y,offset_x,y]).', default="1.0,1.0,0.0,0.0")
 parser.add_argument('--minbox', '-m', help='将小于此数值的点视为噪点 || Consider points smaller than this value as noise.', type=int, default=600)
 args = parser.parse_args()
 
