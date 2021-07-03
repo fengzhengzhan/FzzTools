@@ -8,6 +8,8 @@ FzMarkpdf.exe -n "MVP Detecting Vulnerabilities using Patch-Enhanced Vulnerabili
 
 A file named "Mark_MVP Detect Vulnerabilities Using Patch Enhanced Vulnerability Signatures.pdf" will be generated.
 
+The pictures taken in “images” must show the white edge of the paper, and the naming convention is for page numbers only.
+
  
 
 **简体中文 (^_^)#**
@@ -19,6 +21,8 @@ FzMarkpdf.exe -n "MVP Detecting Vulnerabilities using Patch-Enhanced Vulnerabili
 ```
 
 然后将产生一个名为 "Mark_MVP 使用补丁增强型漏洞签名检测漏洞.pdf "的文件。
+
+images中拍摄的图片，必须要露出纸张的白边，命名规范仅为页码。
 
 ```
 optional arguments:
